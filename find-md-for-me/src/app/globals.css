@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?  family=Montserrat:ital,wght@0,100;0,200;1,100;1,200&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.loginBgImg {
+  background: url("/images/login.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+:where(.css-dev-only-do-not-override-f7vrd6).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > th {
+  background: #e8f6fe !important ;
+}
+
+:where(.css-dev-only-do-not-override-f7vrd6).ant-modal .ant-modal-content {
+  background: #e8f6fe !important ;
+}
+
+:where(.css-dev-only-do-not-override-f7vrd6).ant-btn-default {
+  width: 100% !important;
+  background: #e8f6fe !important;
+}
+
+:where(.css-dev-only-do-not-override-f7vrd6).ant-upload-wrapper
+  .ant-upload-list.ant-upload-list-picture
+  .ant-upload-list-item-error {
+  border: none !important ;
+  box-shadow: 16px !important;
+  margin-top: 25px !important;
+  /* border-color: #1d75f2 !important;  */
+  background: #e4edf1;
+  color: #1d75f2 !important;
+}
+
+.ant-upload-wrapper
+  .ant-upload-list
+  .ant-upload-list-item-error
+  .ant-upload-list-item-name {
+  color: #1d75f2 !important;
+  font-weight: 500;
+  font-size: large;
+}
+
+.ant-btn-primary {
+  background: #c738bd !important; 
+}
+ 
+.ant-popover { 
+  position: fixed !important;
+}
+
+.ant-tooltip .ant-tooltip-inner {
+  display: none !important;
+} 
+
+.ant-popover .ant-popover-inner {
+  padding: 2px !important; 
+ 
+} 
+
+.ant-popover .ant-popover-content {  
+  /* position: fixed !important;  */
+}
